@@ -1,0 +1,44 @@
+
+
+.wine-cards {
+  position: relative;
+  height: 230px;
+  width: auto;
+  border-radius: 15px;
+  margin: 10px;
+  background: #256EFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .wine-bottle-img-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .wine-bottle {
+      height: 100%;
+      width: 50%;
+    }
+  }
+  .wine-name-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    p {
+      margin: 0px !important;
+      color: white;
+      font-size: 23px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="pages-headers">
+    <h1><%= @wine.name %></h1>
+  </div>
+
+
+  <ul>
+  <% @wine.ingredients.each do  |i|%>
+  <li><%= i.name %></li>
+  <% end %>
+  </ul>
+
+</div>
