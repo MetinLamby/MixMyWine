@@ -1,2 +1,43 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner">
+  <h1>Mosaic</h1>
+</div>
+
+<div class="container">
+  <div class="mission">
+    <p>On a mission to make wine more accessible to the youth.</p>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="taste-carousel">
+    <h2>MyWine</h2>
+    <%= image_tag('taste-carouselpng.png', id:"taste-carousel-img") %>
+  </div>
+</div>
+
+
+
+
+
+<div class="container" >
+  <div class="row wines-index-landing-page">
+    <h2>Wines</h2>
+    <% @home_page_wines.each do |wine| %>
+    <div class="col-sm-12 col-md-4 col-lg-4 ">
+      <%= link_to wine_path(wine.id) do  %>
+      <div class="wine-cards">
+          <div class="wine-bottle-img-container">
+            <%= image_tag('y-wine.png', class:"wine-bottle") %>
+          </div>
+          <div class="wine-name-container">
+            <p><%= wine.name %></p>
+          </div>
+      </div>
+      <% end %>
+    </div>
+    <% end %>
+  </div>
+</div>
+

@@ -17,30 +17,16 @@ wine_ingredients.each do |ingredient|
   Ingredient.create(name: ingredient)
 end
 
+require 'faker'
+
+
 # Seeding all the wines
 
 puts 'Creating Wines...'
-wines = [
-  {
-    name:         'Sizzling Red Summer',
-  },
-  {
-    name:         'Neon Carrot Dream',
-  },
-  {
-    name:         'Olive Drab Mellow',
-  },
-  {
-    name:         'Flirt At Night',
-  },
-  {
-    name:         'Sunglow In Dark',
-  },
-  {
-    name:         'Blue Jeans Beauty',
-  },
-]
-Wine.create!(wines)
+40.times do |wine|
+  wine = Wine.new(name: Faker::Music.band)
+  wine.save
+end
 puts 'Created 4 wine'
 
 

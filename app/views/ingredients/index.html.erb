@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="pages-headers">
+    <h1>Your wine should be:</h1>
+  </div>
+
+
+<%= form_tag wines_path, method: :get do %>
+
+    <div class="form-column">
+      <div class="row">
+        <% @ingredients.each do |ingredient| %>
+          <label class="col-lg-3">
+            <div>
+             <p><%= ingredient.name %></p>
+            </div>
+            <%= check_box_tag('ingredients[]', ingredient.id, checked = false, hidden: true, class:"check-me") %>
+          </label>
+        <% end %>
+      </div>
+
+      <div class="row">
+        <div>
+          <%= submit_tag(value = "Find Wines", class:"uni-button") %>
+        </div>
+      </div>
+    </div>
+
+<% end %>
+</div>

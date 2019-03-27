@@ -6,4 +6,6 @@ class Wine < ApplicationRecord
   validates :name, uniqueness: true, presence: true
 
 
+
+  scope :with_ingredients, ->(ingredients) { joins(:doses).where(doses: { ingredient: ingredients}) }
 end
