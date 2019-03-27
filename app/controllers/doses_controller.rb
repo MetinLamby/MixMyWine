@@ -16,7 +16,7 @@ class DosesController < ApplicationController
     @array.each { |x| x.save}
     if @array[0].save
 
-      redirect_to wine_path(@array[1].wine)
+      redirect_to wine_path(@array[0].wine)
     else
       render "wines/show"
     end

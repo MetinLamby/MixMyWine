@@ -1,4 +1,6 @@
 <%= simple_form_for([@wine, @dose]) do |f| %>
-  <%= f.association :ingredient, as: :check_boxes %>
-  <%= f.submit "add a review", class: "btn btn-primary" %>
+  <div style="width: 100%" class="form-column">
+    <%= f.association :ingredient, as: :check_boxes%>
+    <%= f.submit "add ingredient", class: "uni-button", style: "margin-top: 30px; width: 170px;" %>
+  </div>
 <% end %>

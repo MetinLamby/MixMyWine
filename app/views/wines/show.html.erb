@@ -12,22 +12,24 @@
     <div class="wine-show-img-div">
       <%= image_tag('y-wine.png', class:"wine-bottle") %>
     </div>
-
-    <div class="wine-show-ingredients-div">
-      <div class="row">
-        <% @wine.ingredients.each do  |i|%>
-        <div class="col-md-6 col-lg-4">
-          <p><%= i.name %></p>
-        </div>
-        <% end %>
-      </div>
-    </div>
   </div>
-
 
   <div>
     <%= render "doses/form" %>
   </div>
+
+
+    <div class="wine-show-flex">
+      <div class="wine-show-ingredients-div">
+        <div class="row">
+          <% @wine.ingredients.each do  |i|%>
+          <div class="col-md-6 col-lg-4">
+            <p><%= i.name %></p>
+          </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
 </div>
 
 

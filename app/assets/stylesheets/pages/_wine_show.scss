@@ -2,12 +2,15 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 105px;
   /*background: red;*/
   .wine-show-img-div {
     height: 100%;
     width: 40%;
     /*background: blue;*/
+    .wine-bottle {
+      width: 100%;
+    }
   }
   .wine-show-ingredients-div {
     /*background: green;*/
@@ -27,3 +30,86 @@
   }
 
 }
+
+    .col-form-label {
+      display: none !important;
+  }
+
+
+.form-group {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-around !important;
+  width:100%;
+
+
+  #w1 {
+    left: 885px;
+    position: absolute;
+    bottom: 690px;
+  }
+  #w2 {
+    position: absolute;
+    bottom: 625px;
+    left: 1185px;
+  }
+  #w3 {
+    bottom: 405px;
+    position: absolute;
+    left: 1330px;
+  }
+  #w4 {
+    left: 1185px;
+    position: absolute;
+    bottom: 180px;
+  }
+  #w5 {
+    left: 885px;
+    position: absolute;
+    bottom: 100px;
+  }
+  #w6 {
+    left: 595px;
+    position: absolute;
+    bottom: 180px;
+  }
+  #w7 {
+    bottom: 405px;
+    position: absolute;
+    left: 440px;
+  }
+  #w8 {
+    bottom: 625px;
+    position: absolute;
+    left: 595px;
+  }
+
+.form-check {
+  padding: 0 !important;
+  width: 150px !important;
+  .check_boxes {
+    display: none;
+  }
+  &.active .collection_check_boxes {
+    background: #256EFF;
+  }
+
+  .collection_check_boxes {
+    margin: 0;
+    border: 1px solid #256EFF;
+    height: 150px !important;
+    width: 150px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+.collection_check_boxes:hover {
+        background: #256EFF;
+      }
+      .collection_check_boxes:active {
+        transform: scale(1.1);
+      }
+}
+}
+
