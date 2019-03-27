@@ -4,6 +4,10 @@
   <h1>Wines</h1>
 </div>
 
+<%= link_to ingredients_path do %>
+  <i class="fas fa-chevron-left go-back"></i>
+<% end %>
+
   <div class="selectedingredientsflex">
   <% @selectedingredients.each do |ingredient| %>
     <div class="ingredient">
