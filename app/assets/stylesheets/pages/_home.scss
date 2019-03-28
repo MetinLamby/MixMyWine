@@ -38,9 +38,26 @@
     left: -75px;
     top: 20px;
   }
+  #wine-bottle-photo {
+    position: absolute;
+    transform: scale;
+    transform: scale(0.85);
+    top: 175px;
+  }
   #taste-carousel-img {
+    border-radius: 50%;
     height: 70vh;
     margin-top: 60px;
+    animation-name: rotation-img;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+  }
+  @keyframes rotation-img {
+    0% {transform: rotate(0deg)}
+    50% {transform: rotate(180deg)}
+    100% {transform: rotate(360deg)}
   }
 }
 

@@ -24,10 +24,10 @@
 
     <div id="ingredients-index-wine-show" class="wine-show-flex">
       <div class="wine-show-ingredients-div">
-        <div class="row">
+        <div style="justify-content: space-around; flex-wrap: wrap; width: 39vw;" class="row">
           <% @wine.ingredients.each do  |i|%>
-          <div id="wine-taste-index-each" class="col-md-6 col-lg-4">
-            <p><%= i.name %></p>
+          <div class="wine-taste-index-each">
+            <p class="i-name"><%= i.name %></p>
           </div>
           <% end %>
         </div>

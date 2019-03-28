@@ -20,16 +20,8 @@ const form = document.querySelectorAll('.form-check');
 form.forEach((f, index) => f.setAttribute("id", `w${index + 1}`))
 
 
-
-
-
-
-
 const wine = document.querySelectorAll('.each-wine-home');
 wine.forEach((y, index) => y.setAttribute("id", `x${index + 1}`))
-
-
-
 
 
 const ingredient = document.querySelectorAll('.each-ingredient');
@@ -37,7 +29,27 @@ ingredient.forEach((i, index) => i.setAttribute("id", `i${index + 1}`))
 
 
 
-
+const ingredientlist = document.querySelectorAll(".i-name")
+function checkcondition(x){
+  if (x.innerHTML === "Heavy") {
+    x.parentElement.classList.add("heavy");
+  } else if (x.innerHTML === "Sweet") {
+    x.parentElement.classList.add("sweet");
+  } else if (x.innerHTML === "Earthy") {
+    x.parentElement.classList.add("earthy");
+  } else if (x.innerHTML === "Creamy") {
+    x.parentElement.classList.add("creamy");
+  } else if (x.innerHTML === "Strong") {
+    x.parentElement.classList.add("strong");
+  } else if (x.innerHTML === "Sparkling") {
+    x.parentElement.classList.add("sparkling");
+  } else if (x.innerHTML === "Acidic") {
+    x.parentElement.classList.add("acidic");
+  } else if (x.innerHTML === "Fruity") {
+    x.parentElement.classList.add("fruity");
+  }
+}
+ingredientlist.forEach(x => checkcondition(x))
 
 
 
@@ -50,4 +62,11 @@ const ingredient_btn = document.getElementById("submit-btn-wine-ingredients");
 // }
 
 // ingredient_btn.addEventListener('click', scrolldown)
-ingredient_btn.scrollIntoView({behavior: "smooth"});
+// ingredient_btn.scrollIntoView({behavior: "smooth"});
+if (document.body.contains(ingredient_btn)) {
+  ingredient_btn.scrollIntoView({behavior: "smooth"});
+}
+
+
+
+
