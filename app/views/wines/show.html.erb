@@ -28,6 +28,7 @@
           <% @wine.ingredients.each do  |i|%>
           <div class="wine-taste-index-each">
             <p class="i-name"><%= i.name %></p>
+            <%= link_to "❌",  wine_dose_path(i), method: :delete %>
           </div>
           <% end %>
         </div>

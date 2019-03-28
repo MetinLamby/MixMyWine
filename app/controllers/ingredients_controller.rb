@@ -4,6 +4,12 @@ class IngredientsController < ApplicationController
     @ingredients = Ingredient.all
   end
 
+  # def destroy
+  #   @ingredient = Ingredient.find(params[:id])
+  #   @ingredient.destroy
+  #   redirect_to wine_path(@ingredient.wine)
+  # end
+
 
 
 
