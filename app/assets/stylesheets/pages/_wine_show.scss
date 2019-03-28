@@ -16,14 +16,17 @@
     /*background: green;*/
     height: 80%;
     width: 100%;
-    #wine-taste-index-each {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .wine-taste-index-each {
+      display: flex !important;
+      align-items: center !important;
+      justify-content: space-around !important;
     p {
         margin: 0;
         margin-bottom: 40px !important;
-        border: 1px solid #256EFF;
+        border: 1px solid red;
         height: 150px !important;
         width: 150px !important;
         border-radius: 50%;
@@ -32,8 +35,39 @@
         justify-content: space-around;
       }
     }
+      .heavy p {
+        border: none;
+        background: #49BEAA;
+      }
+      .sweet p {
+        border: none;
+        background: #FFC43D;
+      }
+      .earthy p {
+        border: none;
+        background: #849324;
+      }
+      .creamy p {
+        border: none;
+        background: #F52F57;
+      }
+      .strong p {
+        border: none;
+        background: #A4036F;
+      }
+      .sparkling p {
+        border: none;
+        background: #5BC0EB;
+      }
+      .acidic p {
+        border: none;
+        background: #E3170A;
+      }
+      .fruity p {
+        border: none;
+        background: #F9A03F;
+      }
   }
-
 }
 
     .col-form-label {
