@@ -4,14 +4,21 @@
     <h1>Mywine</h1>
   </div>
 
-  <%= simple_form_for @wine do |f| %>
-  <div style="display: flex;align-items: center;justify-content: space-around;flex-direction: column;">
-    <%= f.input :name %>
+  <div id="wine-name-form">
+    <div>
+      <div class="pages-headers">
+        <h3>Name your wine</h3>
+      </div>
 
-
-    <%= f.submit "Add a Wine", class: "uni-button" %>
+      <%= simple_form_for @wine do |f| %>
+      <div id="name-form" style="display: flex;align-items: center;justify-content: space-around;flex-direction: column;">
+        <%= f.input :name %>
+        <%= f.submit "Add a Wine", class: "uni-button" %>
+      </div>
+      <% end %>
+    </div>
   </div>
-  <% end %>
+
 </div>
 
 
