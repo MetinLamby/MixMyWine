@@ -18,12 +18,15 @@
     <%= render "doses/form" %>
   </div>
 
+  <div class="pages-headers">
+    <h1>Your chosen wine tastes:</h1>
+  </div>
 
-    <div class="wine-show-flex">
+    <div id="ingredients-index-wine-show" class="wine-show-flex">
       <div class="wine-show-ingredients-div">
         <div class="row">
           <% @wine.ingredients.each do  |i|%>
-          <div class="col-md-6 col-lg-4">
+          <div id="wine-taste-index-each" class="col-md-6 col-lg-4">
             <p><%= i.name %></p>
           </div>
           <% end %>

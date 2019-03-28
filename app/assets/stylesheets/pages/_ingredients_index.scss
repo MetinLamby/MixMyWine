@@ -1,3 +1,12 @@
+.ingredient-index-form {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+
 form {
   margin: 50px 0px;
   .form-column {
@@ -12,7 +21,6 @@ form {
       margin-bottom: 50px;
       p {
         margin: 0;
-        border: 1px solid #256EFF;
         height: 150px !important;
         width: 150px !important;
         border-radius: 50%;
@@ -32,3 +40,132 @@ form {
     }
   }
 }
+
+#i1 {
+    p {
+      border: none;
+      background: #49BEAA;
+      opacity: 0.5;
+    }
+    p:hover {
+      background: #49BEAA;
+      opacity: 1;
+    }
+    &.active p {
+      background: #49BEAA;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  #i2 {
+    p {
+      border: none;
+      background: #A4036F;
+      opacity: 0.5;
+    }
+    p:hover {
+      background: #A4036F;
+      opacity: 1;
+    }
+    &.active p {
+      background: #A4036F;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  #i3 {
+    p {
+      border: none;
+      background: #FFC43D;
+      opacity: 0.5;
+    }
+    p:hover {
+      background: #FFC43D;
+      opacity: 1;
+    }
+    &.active p {
+      background: #FFC43D;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  #i4 {
+    p {
+      border: none;
+      background: #5BC0EB;
+      opacity: 0.5;
+    }
+    p:hover {
+      background: #5BC0EB;
+      opacity: 1;
+    }
+    &.active p {
+      background: #5BC0EB;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  #i5 {
+    p {
+      border: none;
+      background: #E3170A;
+      opacity: 0.5;
+    }
+    p:hover {
+      background: #E3170A;
+      opacity: 1;
+    }
+    &.active p {
+      background: #E3170A;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  #i6 {
+    p {
+      border: none;
+      background: #849324;
+      opacity: 0.5;
+    }
+    p:hover {
+      background: #849324;
+      opacity: 1;
+    }
+    &.active p {
+      background: #849324;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  #i7 {
+    p {
+      border: none;
+      background: #F9A03F;
+      opacity: 0.5;
+    }
+    p:hover {
+      background: #F9A03F;
+      opacity: 1;
+    }
+    &.active p {
+      background: #F9A03F;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+  #i8 {
+    p {
+      border: none;
+      background: #F52F57;
+      opacity: 0.5;
+    }
+    p:hover {
+      background: #F52F57;
+      opacity: 1;
+    }
+    &.active p {
+      background: #F52F57;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
