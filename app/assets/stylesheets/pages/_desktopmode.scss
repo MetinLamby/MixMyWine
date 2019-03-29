@@ -1,10 +1,62 @@
 @media only screen and (min-width: 1030px) {
   .taste-carousel h2 {
-
     left: 0px;
   }
   .wines-index-landing-page h2 {
-
     left: 0px;
   }
+
+  .mission p {
+    margin: 0px 0px;
+  }
+  .taste-carousel #wine-bottle-photo {
+    transform: scale(0.65);
+    top: 76px;
+  }
+
+  .form-group #w1 {
+    left: 565px;
+    position: absolute;
+    bottom: 415px;
+  }
+
+  .form-group #w2 {
+    position: absolute;
+    bottom: 330px;
+    left: 785px;
+  }
+
+  .form-group #w3 {
+    bottom: 130px;
+    position: absolute;
+    left: 900px;
+  }
+  .form-group #w4 {
+    left: 785px;
+    position: absolute;
+    bottom: -75px;
+  }
+  .form-group #w5 {
+    left: 565px;
+    position: absolute;
+    bottom: -175px;
+  }
+  .form-group #w6 {
+    left: 355px;
+    position: absolute;
+    bottom: -75px;
+  }
+  .form-group #w7 {
+    bottom: 130px;
+    position: absolute;
+    left: 240px;
+  }
+  .form-group #w8 {
+    bottom: 330px;
+    position: absolute;
+    left: 355px;
+  }
 }
+
+
+
