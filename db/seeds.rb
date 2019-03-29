@@ -24,7 +24,7 @@ require 'faker'
 
 puts 'Creating Wines...'
 40.times do |wine|
-  wine = Wine.new(name: Faker::Music.band)
+  wine = Wine.new(name: Faker::Nation.capital_city)
   wine.save
 end
 puts 'Created 4 wine'

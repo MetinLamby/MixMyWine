@@ -22,6 +22,14 @@ class DosesController < ApplicationController
     end
   end
 
+  def destroy
+    wine = params[:id]
+    ing = params[:wine_id]
+    @dose = Dose.where(ingredient_id: ing, wine_id: wine)
+    @dose[0].destroy
+    redirect_to wine_path(@dose[0].wine_id)
+  end
+
   private
 
   def dose_params
