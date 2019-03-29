@@ -1,5 +1,7 @@
 class WinesController < ApplicationController
 
+  # authorize @wine
+
   def index
     # if params[:query].present?
     #   sql_query = " \

@@ -20,6 +20,7 @@
     align-items: center;
     justify-content: space-around;
     .wine-taste-index-each {
+      position: relative;
       display: flex !important;
       align-items: center !important;
       justify-content: space-around !important;
@@ -34,6 +35,27 @@
         align-items: center;
         justify-content: space-around;
       }
+      .delete-link {
+        color: white !important;
+      }
+
+    a {
+      opacity: 0;
+      position: absolute;
+      left: 0px;
+      height: 150px;
+      width: 150px;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      i {
+        font-size: 112px;
+      }
+    }
+    a:hover {
+      opacity: 1;
+    }
     }
       .heavy p {
         border: none;
