@@ -1,3 +1,5 @@
+
+/*Small mac*/
 @media only screen and (min-width: 1030px) {
   .taste-carousel h2 {
     left: 0px;
@@ -8,6 +10,7 @@
 
   .mission p {
     margin: 0px 0px;
+    /*color: red;*/
   }
   .taste-carousel #wine-bottle-photo {
     transform: scale(0.65);
@@ -60,3 +63,65 @@
 
 
 
+
+/*Big mac*/
+@media only screen and (min-width: 1600px) {
+  .taste-carousel h2 {
+    left: -75px;
+  }
+  .wines-index-landing-page h2 {
+    left: -50px;
+  }
+
+  .mission p {
+    margin: 30px 0px;
+    /*color: green;*/
+  }
+  .taste-carousel #wine-bottle-photo {
+    transform: scale(0.85);
+    top: 175px;
+  }
+
+  .form-group #w1 {
+    left: 885px;
+    position: absolute;
+    bottom: 690px;
+  }
+
+  .form-group #w2 {
+    position: absolute;
+    bottom: 605px;
+    left: 1105px;
+  }
+
+  .form-group #w3 {
+    bottom: 405px;
+    position: absolute;
+    left: 1220px;
+  }
+  .form-group #w4 {
+    left: 1105px;
+    position: absolute;
+    bottom: 200px;
+  }
+  .form-group #w5 {
+    left: 885px;
+    position: absolute;
+    bottom: 100px;
+  }
+  .form-group #w6 {
+    left: 675px;
+    position: absolute;
+    bottom: 200px;
+  }
+  .form-group #w7 {
+    bottom: 405px;
+    position: absolute;
+    left: 560px;
+  }
+  .form-group #w8 {
+    bottom: 605px;
+    position: absolute;
+    left: 675px;
+  }
+}
