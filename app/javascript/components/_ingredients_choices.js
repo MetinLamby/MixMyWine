@@ -35,16 +35,16 @@ function checkcondition(x){
     x.parentElement.classList.add("heavy");
   } else if (x.innerHTML === "Sweet") {
     x.parentElement.classList.add("sweet");
-  } else if (x.innerHTML === "Earthy") {
-    x.parentElement.classList.add("earthy");
+  } else if (x.innerHTML === "Sour") {
+    x.parentElement.classList.add("sour");
   } else if (x.innerHTML === "Creamy") {
     x.parentElement.classList.add("creamy");
-  } else if (x.innerHTML === "Strong") {
-    x.parentElement.classList.add("strong");
+  } else if (x.innerHTML === "Bitter") {
+    x.parentElement.classList.add("bitter");
   } else if (x.innerHTML === "Sparkling") {
     x.parentElement.classList.add("sparkling");
-  } else if (x.innerHTML === "Acidic") {
-    x.parentElement.classList.add("acidic");
+  } else if (x.innerHTML === "Confetti") {
+    x.parentElement.classList.add("confetti");
   } else if (x.innerHTML === "Fruity") {
     x.parentElement.classList.add("fruity");
   }
