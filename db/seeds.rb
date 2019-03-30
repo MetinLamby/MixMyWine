@@ -1,3 +1,4 @@
+require 'faker'
 
 
 puts 'Cleaning database...'
@@ -7,24 +8,34 @@ puts 'Destroying all wines...'
 Wine.destroy_all
 puts 'Destroying all ingredients...'
 Ingredient.destroy_all
+puts 'Destroying all wine types...'
+Winetype.destroy_all
 
+# Seeding all the wine types
+
+wine_types = ["red", "white", "rose", "sekt"]
+
+wine_types.each do |type|
+  Winetype.create(name: type)
+end
 
 # Seeding all the ingredients
 
-wine_ingredients = ["Heavy", "Strong", "Sweet", "Sparkling", "Acidic", "Earthy", "Fruity", "Creamy"]
+# wine_ingredients = ["Heavy", "Strong", "Sweet", "Sparkling", "Acidic", "Earthy", "Fruity", "Creamy"]
+
+wine_ingredients = ["Heavy", "Bitter", "Sweet", "Sparkling", "Confetti", "Sour", "Fruity", "Creamy"]
+
 
 wine_ingredients.each do |ingredient|
   Ingredient.create(name: ingredient)
 end
 
-require 'faker'
-
 
 # Seeding all the wines
 
 puts 'Creating Wines...'
-40.times do |wine|
-  wine = Wine.new(name: Faker::Nation.capital_city)
+9.times do |wine|
+  wine = Wine.new(name: Faker::Nation.capital_city, winetype_id: Winetype.all.sample.id)
   wine.save
 end
 puts 'Created 4 wine'
