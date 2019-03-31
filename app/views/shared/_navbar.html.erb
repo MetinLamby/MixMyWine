@@ -22,9 +22,12 @@
         </li>
 
 
-
-
         <li class="nav-item">
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+        </li>
+
+
+        <li class="nav-item active">
           <%= link_to  "#", class: "nav-link" do %>
             <i style="transform: scale(1.6);" class="fas fa-shopping-bag"></i>
           <% end %>
@@ -33,9 +36,6 @@
 
 
 
-        <!-- <li class="nav-item">
-          <#%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-        </li> -->
 
       <% else %>
         <li class="nav-item">
