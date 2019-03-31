@@ -23,6 +23,9 @@ class WinesController < ApplicationController
     @dose = Dose.new
   end
 
+  # def mywines
+  #   @wines = Wine.where(user_id: current_user.id)
+  # end
 
   def new
     @wine = Wine.new
