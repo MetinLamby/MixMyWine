@@ -4,7 +4,6 @@ class Wine < ApplicationRecord
   has_many :doses, dependent: :destroy
   has_many :ingredients, through: :doses
 
-  belongs_to :winetype
 
   validates :name, uniqueness: true, presence: true
   # validates :doses, uniqueness: true, presence: true

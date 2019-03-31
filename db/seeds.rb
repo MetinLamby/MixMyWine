@@ -35,16 +35,12 @@ end
 # Seeding all the wines
 
 puts 'Creating Wines...'
-# 9.times do |wine|
-#   wine = Wine.new(name: Faker::Nation.capital_city, winetype_id: Winetype.all.sample.id)
-#   wine.save
-# end
-Wine.create!(name: "Berlin", price: 10)
-Wine.create!(name: "Paris", price: 10)
-Wine.create!(name: "New York", price: 10)
-Wine.create!(name: "London", price: 10)
-Wine.create!(name: "Istanbul", price: 10)
-Wine.create!(name: "Rio", price: 10)
+Wine.create!(name: "Berlin", price: 10, sku:"berlin")
+Wine.create!(name: "Paris", price: 10, sku:"paris")
+Wine.create!(name: "New York", price: 10, sku:"new-york")
+Wine.create!(name: "London", price: 10, sku:"london")
+Wine.create!(name: "Istanbul", price: 10, sku:"istanbul")
+Wine.create!(name: "Rio", price: 10, sku:"rio")
 puts 'Created 6 wines'
 
 
