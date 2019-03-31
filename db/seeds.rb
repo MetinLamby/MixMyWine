@@ -8,17 +8,17 @@ puts 'Destroying all wines...'
 Wine.destroy_all
 puts 'Destroying all ingredients...'
 Ingredient.destroy_all
-# puts 'Destroying all wine types...'
-# Winetype.destroy_all
+puts 'Destroying all wine types...'
+Winetype.destroy_all
 puts 'Destroyed the whole database content'
 
 # Seeding all the wine types
 
-# wine_types = ["red", "white", "rose", "sekt"]
+wine_types = ["red", "white", "rose", "sekt"]
 
-# wine_types.each do |type|
-#   Winetype.create!(name: type)
-# end
+wine_types.each do |type|
+  Winetype.create!(name: type)
+end
 
 # Seeding all the ingredients
 
@@ -35,13 +35,19 @@ end
 # Seeding all the wines
 
 puts 'Creating Wines...'
-Wine.create!(name: "Berlin", price: 10, sku:"berlin")
-Wine.create!(name: "Paris", price: 10, sku:"paris")
-Wine.create!(name: "New York", price: 10, sku:"new-york")
-Wine.create!(name: "London", price: 10, sku:"london")
-Wine.create!(name: "Istanbul", price: 10, sku:"istanbul")
-Wine.create!(name: "Rio", price: 10, sku:"rio")
-puts 'Created 6 wines'
+Wine.create!(name: "Berlin", price: 10, sku:"berlin", winetype_id: Winetype.all[1].id)
+Wine.create!(name: "Paris", price: 10, sku:"paris", winetype_id: Winetype.all[2].id)
+Wine.create!(name: "New York", price: 10, sku:"new-york", winetype_id: Winetype.all[1].id)
+Wine.create!(name: "London", price: 10, sku:"london", winetype_id: Winetype.all[0].id)
+Wine.create!(name: "Istanbul", price: 10, sku:"istanbul", winetype_id: Winetype.all[0].id)
+Wine.create!(name: "Rio", price: 10, sku:"rio", winetype_id: Winetype.all[3].id)
+Wine.create!(name: "Shanghai", price: 10, sku:"shanghai", winetype_id: Winetype.all[2].id)
+Wine.create!(name: "Moscow", price: 10, sku:"moscow", winetype_id: Winetype.all[0].id)
+Wine.create!(name: "Sydney", price: 10, sku:"sydney", winetype_id: Winetype.all[3].id)
+Wine.create!(name: "Rome", price: 10, sku:"rome", winetype_id: Winetype.all[0].id)
+Wine.create!(name: "Tokyo", price: 10, sku:"tokyo", winetype_id: Winetype.all[3].id)
+Wine.create!(name: "Mykonos", price: 10, sku:"sydney", winetype_id: Winetype.all[2].id)
+puts 'Created 12 wines'
 
 
 # Seeding all the doses
