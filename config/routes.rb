@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     resources :payments, only: [:new, :create]
   end
 
-
+  # get '/dashboard/wines', to: 'wines#mywines'
   resources :ingredients, only: [:index]
   # resources :doses, only: [:destroy]
   resources :wines, only: [:index, :show, :new, :create] do
