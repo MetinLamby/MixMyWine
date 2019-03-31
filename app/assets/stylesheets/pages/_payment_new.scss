@@ -1,0 +1,25 @@
+.purchase-flex {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .wine-purchase-back {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 19.89%, rgba(0, 0, 0, 0.7) 100%), image_url("banner-pic.jpg");
+      background-size: cover;
+      border-radius: 10px;
+      height: 40vh;
+      width: 30vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      h3 {
+        color: white;
+      }
+      span {
+        color: white;
+      }
+    }
+}

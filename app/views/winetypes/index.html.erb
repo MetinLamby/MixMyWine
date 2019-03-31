@@ -1,11 +1,13 @@
-<div class="container">
-  <h1>This is the winetypes index page</h1>
+<div class="container winetype-styles">
+  <h1>What type of wine are you looking for?</h1>
 
-<% @winetypes.each do |winetype| %>
-<%= link_to ingredients_path(winetype: winetype.id) do %>
-<div class="gym_address">
-  <%= winetype.name %>
-</div>
-<% end %>
-<% end %>
+  <div class="ingredient-flex">
+    <% @winetypes.each do |winetype| %>
+    <%= link_to ingredients_path(winetype: winetype.id) do %>
+    <div class="gym_address">
+      <%= winetype.name %>
+    </div>
+    <% end %>
+    <% end %>
+  </div>
 </div>
