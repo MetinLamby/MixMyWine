@@ -42,7 +42,7 @@
   <p>Amount: <%= humanized_money_with_symbol(@wine.price) %></p>
     <%= form_tag orders_path do %>
       <%= hidden_field_tag 'wine_id', @wine.id %>
-      <%= submit_tag 'Purchase', class: 'btn btn-primary' %>
+      <%= submit_tag 'Purchase', class: 'uni-button' %>
     <% end %>
 </div>
 

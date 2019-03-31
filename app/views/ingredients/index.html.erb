@@ -4,8 +4,7 @@
   </div>
 
 
-<%= form_tag wines_path, method: :get do %>
-
+<%= form_tag wines_path(winetype: params[:winetype]), method: :get do %>
     <div class="form-column">
       <div class="row">
         <% @ingredients.each do |ingredient| %>
@@ -19,11 +18,16 @@
       </div>
 
       <div class="row">
+        <%= hidden_field_tag("winetype", params[:winetype]) %>
+      </div>
+
+      <div class="row">
         <div>
           <%= submit_tag(value = "Find Wines", class:"uni-button") %>
         </div>
       </div>
     </div>
-
 <% end %>
+
 </div>
+

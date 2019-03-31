@@ -15,17 +15,15 @@ class WinesController < ApplicationController
     # @ingredients = Ingredient.all
     # @wines = Wine.all
     @selectedingredients = Ingredient.where(id: params[:ingredients])
-    @selcetedwines = Wine.with_ingredients(@selectedingredients).uniq
+    @selectedwinetype = Winetype.find(params[:winetype])
+
+    @selcetedwines = Wine.with_ingredients(@selectedingredients).with_winetype(@selectedwinetype).uniq
   end
 
   def show
     @wine = Wine.find(params[:id])
     @dose = Dose.new
   end
-
-  # def mywines
-  #   @wines = Wine.where(user_id: current_user.id)
-  # end
 
   def new
     @wine = Wine.new
@@ -43,7 +41,7 @@ class WinesController < ApplicationController
   private
 
   def wine_params
-   params.require(:wine).permit(:name)
+   params.require(:wine).permit(:name, :winetype_id)
   end
 end
 
