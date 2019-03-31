@@ -8,16 +8,17 @@ puts 'Destroying all wines...'
 Wine.destroy_all
 puts 'Destroying all ingredients...'
 Ingredient.destroy_all
-puts 'Destroying all wine types...'
-Winetype.destroy_all
+# puts 'Destroying all wine types...'
+# Winetype.destroy_all
+puts 'Destroyed the whole database content'
 
 # Seeding all the wine types
 
-wine_types = ["red", "white", "rose", "sekt"]
+# wine_types = ["red", "white", "rose", "sekt"]
 
-wine_types.each do |type|
-  Winetype.create(name: type)
-end
+# wine_types.each do |type|
+#   Winetype.create!(name: type)
+# end
 
 # Seeding all the ingredients
 
@@ -34,11 +35,17 @@ end
 # Seeding all the wines
 
 puts 'Creating Wines...'
-9.times do |wine|
-  wine = Wine.new(name: Faker::Nation.capital_city, winetype_id: Winetype.all.sample.id)
-  wine.save
-end
-puts 'Created 4 wine'
+# 9.times do |wine|
+#   wine = Wine.new(name: Faker::Nation.capital_city, winetype_id: Winetype.all.sample.id)
+#   wine.save
+# end
+Wine.create!(name: "Berlin", price: 10)
+Wine.create!(name: "Paris", price: 10)
+Wine.create!(name: "New York", price: 10)
+Wine.create!(name: "London", price: 10)
+Wine.create!(name: "Istanbul", price: 10)
+Wine.create!(name: "Rio", price: 10)
+puts 'Created 6 wines'
 
 
 # Seeding all the doses
