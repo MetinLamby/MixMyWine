@@ -1,7 +1,11 @@
 
-<div class="container" >
+<div style="height: 92vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;" class="container">
 <div class="pages-headers">
-  <h1>Wines</h1>
+  <h1>Wines (<%= @selectedwinetype.name %>)</h1>
 </div>
 
 
@@ -13,7 +17,8 @@
   <div class="selectedingredientsflex">
   <% @selectedingredients.each do |ingredient| %>
     <div class="ingredient">
-      <p><%= ingredient.name %></p>
+      <!-- <p class="i-name"><#%= ingredient.name %></p> -->
+      <p class="ingredient-name"><%= ingredient.name %></p>
     </div>
   <% end %>
   </div>
@@ -27,7 +32,7 @@
             <%= image_tag('y-wine.png', class:"wine-bottle") %>
           </div>
           <div class="wine-name-container">
-            <p><%= wine.name %></p>
+            <p class="winename"><%= wine.name %></p>
           </div>
       </div>
       <% end %>

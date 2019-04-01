@@ -16,7 +16,6 @@ class WinesController < ApplicationController
     # @wines = Wine.all
     @selectedingredients = Ingredient.where(id: params[:ingredients])
     @selectedwinetype = Winetype.find(params[:winetype])
-
     @selcetedwines = Wine.with_ingredients(@selectedingredients).with_winetype(@selectedwinetype).uniq
   end
 

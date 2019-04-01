@@ -21,15 +21,48 @@ form {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  .ingredient {
-    height: 100px;
-    width: 100px;
+  margin: 70px;
+  .ingredient-name {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 70px;
+    justify-content: space-around;
     p {
       text-decoration: underline;
     }
   }
+    .heavy {
+        border: none;
+        background: #49BEAA;
+      }
+      .sweet {
+        border: none;
+        background: #FFC43D;
+      }
+      .sour {
+        border: none;
+        background: #849324;
+      }
+      .creamy {
+        border: none;
+        background: #F52F57;
+      }
+      .bitter {
+        border: none;
+        background: #A4036F;
+      }
+      .sparkling {
+        border: none;
+        background: #5BC0EB;
+      }
+      .confetti {
+        border: none;
+        background: #E3170A;
+      }
+      .fruity {
+        border: none;
+        background: #F9A03F;
+      }
 }
