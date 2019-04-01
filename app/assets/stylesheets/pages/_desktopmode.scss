@@ -1,9 +1,156 @@
 
+/*Pone size*/
+@media only screen and (min-width: 320px) {
+  .banner {
+    height: 91vh;
+  }
+  .banner h1 {
+    font-size: 35px;
+  }
+  .taste-carousel #taste-carousel-img {
+    height: 38vh;
+  }
+
+  .mission p {
+    margin: 0px 0px;
+    font-size: 27px;
+    text-align: center;
+    /*color: red;*/
+  }
+
+  .taste-carousel #wine-bottle-photo {
+    transform: scale(0.35);
+    top: -38px;
+  }
+
+
+  .taste-carousel h2 {
+    left: 32%;
+  }
+
+  .wines-index-landing-page h2 {
+    left: 38%;
+  }
+
+  .wine-new-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #wine-name-form {
+    margin-top: 12vh;
+  }
+
+  .form-group #w1 {
+    left: 132px;
+    position: absolute;
+    bottom: 447px;
+    transform: scale(0.65);
+  }
+
+  .form-group #w2 {
+    position: absolute;
+    bottom: 410px;
+    left: 223px;
+    transform: scale(0.65);
+  }
+
+  .form-group #w4 {
+    position: absolute;
+    bottom: 232px;
+    left: 223px;
+    transform: scale(0.65);
+  }
+
+  .form-group #w8 {
+    position: absolute;
+    bottom: 410px;
+    left: 41px;
+    transform: scale(0.65);
+  }
+
+  .form-group #w6 {
+    position: absolute;
+    bottom: 232px;
+    left: 41px;
+    transform: scale(0.65);
+  }
+
+  .form-group #w3 {
+    bottom: 321px;
+    position: absolute;
+    left: 265px;
+    transform: scale(0.65);
+  }
+
+  .form-group #w7 {
+    bottom: 321px;
+    position: absolute;
+    left: 0px;
+    transform: scale(0.65);
+  }
+
+  .form-group #w5 {
+    left: 132px;
+    position: absolute;
+    bottom: 194px;
+    transform: scale(0.65);
+  }
+
+  .chosen-wine-tastes-header {
+    font-size: 27px;
+    text-align: center;
+  }
+
+  .ingredient-index-form {
+    height: 260vh;
+  }
+
+  .ingredient-name {
+    transform: scale(0.7);
+  }
+  .wine-name-and-type {
+    font-size: 39px;
+  }
+  .selectedingredientsflex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wine-index-ingredient-index {
+    height: 210vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .wine-purchase-back {
+    height: 100% !important;
+    width: 100vw !important;
+    border-radius: 0px !important;
+  }
+}
+
+
 /*Small mac*/
 @media only screen and (min-width: 1030px) {
+  .banner {
+    height: 70vh;
+  }
+  .banner h1 {
+    font-size: 75px;
+  }
   .form-background {
     padding: 10px 0px;
     /*background: red;*/
+  }
+  .mission p {
+    margin: 0px 0px;
+    font-size: 30px;
+    /*color: red;*/
   }
   .taste-carousel h2 {
     left: 0px;
@@ -11,59 +158,105 @@
   .wines-index-landing-page h2 {
     left: 0px;
   }
-
-  .mission p {
-    margin: 0px 0px;
-    /*color: red;*/
+  .taste-carousel #taste-carousel-img {
+    height: 70vh;
   }
+
   .taste-carousel #wine-bottle-photo {
     transform: scale(0.65);
     top: 76px;
+  }
+
+  #wine-name-form {
+    margin-top: 20vh;
   }
 
   .form-group #w1 {
     left: 565px;
     position: absolute;
     bottom: 415px;
+    transform: scale(1);
   }
 
   .form-group #w2 {
     position: absolute;
     bottom: 330px;
     left: 785px;
+    transform: scale(1);
   }
 
   .form-group #w3 {
     bottom: 130px;
     position: absolute;
     left: 900px;
+    transform: scale(1);
   }
   .form-group #w4 {
     left: 785px;
     position: absolute;
     bottom: -75px;
+    transform: scale(1);
   }
   .form-group #w5 {
     left: 565px;
     position: absolute;
     bottom: -175px;
+    transform: scale(1);
   }
   .form-group #w6 {
     left: 355px;
     position: absolute;
     bottom: -75px;
+    transform: scale(1);
   }
   .form-group #w7 {
     bottom: 130px;
     position: absolute;
     left: 240px;
+    transform: scale(1);
   }
   .form-group #w8 {
     bottom: 330px;
     position: absolute;
     left: 355px;
+    transform: scale(1);
+  }
+
+  .chosen-wine-tastes-header {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .wine-name-and-type {
+    font-size: 2.5rem;
+  }
+
+  .ingredient-index-form {
+    height: 90vh;
+  }
+  .ingredient-name {
+    transform: scale(1);
+  }
+
+  .wine-index-ingredient-index {
+    height: 92vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .selectedingredientsflex {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .wine-purchase-back {
+    border-radius: 10px !important;
+    height: 40vh !important;
+    width: 30vw !important;
   }
 }
+
 
 
 

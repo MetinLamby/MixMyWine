@@ -1,7 +1,7 @@
 <div class="container">
 
   <div class="pages-headers">
-    <h1><%= @wine.name %> (<%= @wine.winetype.name %>)</h1>
+    <h1 class="wine-name-and-type"><%= @wine.name %> (<%= @wine.winetype.name %>)</h1>
   </div>
 
   <%= link_to :back do %>
@@ -20,7 +20,7 @@
 
 
   <div style="margin-top: 95px !important;" class="pages-headers">
-    <h1>Your chosen wine tastes:</h1>
+    <h1 class="chosen-wine-tastes-header">Your chosen wine tastes:</h1>
   </div>
 
     <div id="ingredients-index-wine-show" class="wine-show-flex">
