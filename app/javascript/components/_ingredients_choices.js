@@ -28,6 +28,9 @@ const ingredient = document.querySelectorAll('.each-ingredient');
 ingredient.forEach((i, index) => i.setAttribute("id", `i${index + 1}`))
 
 
+const winetype = document.querySelectorAll('.winetype-link');
+winetype.forEach((wt, index) => wt.setAttribute("id", `wt${index + 1}`))
+
 
 const ingredientlist = document.querySelectorAll(".i-name")
 function checkcondition(x){
@@ -50,6 +53,83 @@ function checkcondition(x){
   }
 }
 ingredientlist.forEach(x => checkcondition(x))
+
+
+
+const ingredientlisttwo = document.querySelectorAll(".ingredient-name")
+function checkconditiontwo(x){
+  if (x.innerHTML === "Heavy") {
+    x.classList.add("heavy");
+  } else if (x.innerHTML === "Sweet") {
+    x.classList.add("sweet");
+  } else if (x.innerHTML === "Sour") {
+    x.classList.add("sour");
+  } else if (x.innerHTML === "Creamy") {
+    x.classList.add("creamy");
+  } else if (x.innerHTML === "Bitter") {
+    x.classList.add("bitter");
+  } else if (x.innerHTML === "Sparkling") {
+    x.classList.add("sparkling");
+  } else if (x.innerHTML === "Confetti") {
+    x.classList.add("confetti");
+  } else if (x.innerHTML === "Fruity") {
+    x.classList.add("fruity");
+  }
+}
+ingredientlisttwo.forEach(x => checkconditiontwo(x))
+
+
+const wineindex = document.querySelectorAll(".wine-cards")
+function checkconditionthree(x){
+  if (x.querySelectorAll(".winename")[0].innerHTML === "Berlin") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("berlin");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Paris") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("paris");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "New York") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("new-york");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "London") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("london");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Istanbul") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("istanbul");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Rio") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("rio");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Shanghai") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("shanghai");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Moscow") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("moscow");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Sydney") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("sydney");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Rome") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("rome");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Tokyo") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("tokyo");
+
+  } else if (x.querySelectorAll(".winename")[0].innerHTML === "Mykonos") {
+    x.querySelector(".winename").parentElement.parentElement.classList.add("mykonos");
+  }
+}
+wineindex.forEach(x => checkconditionthree(x))
+
+
+
+
+
+// const q = document.querySelectorAll(".wine-cards")
+
+// q.forEach(q=>console.log(q.querySelectorAll(".winename")[0].innerHTML))
+
+
+
 
 
 

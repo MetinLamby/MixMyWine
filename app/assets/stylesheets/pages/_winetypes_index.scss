@@ -12,6 +12,8 @@
     width: 75%;
     height: 15%;
     margin-top: 45px;
+/*    border: solid 2px #D81159;
+    border-radius: 12px;*/
     a {
       background: #edd5dd;
       height: 100%;
@@ -21,9 +23,64 @@
       justify-content: space-around;
       color: white;
     }
+    #wt1 {
+      color: white;
+      background: #e0babf;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    #wt1:hover {
+      color: white;
+      background: #690a17;
+      transform: scale(1.05);
+      border-radius: 5px;
+      box-shadow: 0px 0px 7px black;
+      z-index: 2;
+    }
+    #wt2 {
+      color: white;
+      background: #e0d2ba;
+    }
+    #wt2:hover {
+      color: white;
+      background: #d1bd98;
+      transform: scale(1.05);
+      border-radius: 5px;
+      box-shadow: 0px 0px 7px black;
+      z-index: 2;
+    }
+    #wt3 {
+      color: white;
+      background: #e0c3b8;
+    }
+    #wt3:hover {
+      color: white;
+      background: #e3815a;
+      transform: scale(1.05);
+      border-radius: 5px;
+      box-shadow: 0px 0px 7px black;
+      z-index: 2;
+    }
+    #wt4 {
+      color: white;
+      background: #e0d1ba;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+    #wt4:hover {
+      color: white;
+      background: #d8c7ab;
+      transform: scale(1.05);
+      border-radius: 5px;
+      box-shadow: 0px 0px 7px black;
+      z-index: 2;
+    }
     a:hover {
       color: white;
       background: #D81159;
+    }
+    .wine-type {
+      font-size: 23px;
     }
   }
 }

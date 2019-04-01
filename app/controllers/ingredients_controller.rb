@@ -1,6 +1,7 @@
 class IngredientsController < ApplicationController
 
   def index
+    @winetype = Winetype.find(params[:winetype])
     @ingredients = Ingredient.all
   end
 
