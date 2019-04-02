@@ -5,7 +5,7 @@
 
 
 <%= form_tag wines_path(winetype: params[:winetype]), method: :get do %>
-    <div class="form-column">
+    <div style="margin-top: 50px;" class="form-column">
       <div class="row">
         <% @ingredients.each do |ingredient| %>
           <label class="col-sm-12 col-lg-3 each-ingredient">
