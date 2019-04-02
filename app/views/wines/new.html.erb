@@ -1,23 +1,28 @@
-<div class="container">
+<div class="form-flex">
+  <div>
+    <div class="pages-headers">
+      <h1 style="color: white;">Mywine</h1>
+    </div>
 
-  <div class="pages-headers">
-    <h1>Mywine</h1>
-  </div>
-
-  <div style="display: flex;align-items: center;justify-content: space-around;">
-    <div id="wine-name-form">
-      <div>
-        <div class="pages-headers">
-          <h3>Name your wine</h3>
-        </div>
-        <div class="wine-new-form" style="display: flex;align-items: center;justify-content: space-between;">
-            <%= simple_form_for @wine do |f| %>
-            <div id="name-form" style="display: flex;align-items: center;justify-content: space-around;flex-direction: column;">
-              <%= f.input :name, id: "wine-name-input" %>
-              <%= f.association :winetype, style:"width: 15vw;" %>
-              <%= f.submit "Add a Wine", class: "uni-button" %>
-            </div>
-            <% end %>
+    <div style="display: flex;align-items: center;justify-content: space-around;">
+      <div id="wine-name-form">
+        <div>
+          <div class="pages-headers">
+            <h3>Name your wine</h3>
+          </div>
+          <div class="wine-new-form" style="display: flex;align-items: center;justify-content: space-between;">
+              <%= simple_form_for @wine do |f| %>
+              <div id="name-form" style="display: flex;align-items: center;justify-content: space-around;flex-direction: column;">
+                <%= f.input :name, id: "wine-name-input",
+                input_html: { autocomplete: "name" },
+                label: false,
+                placeholder: 'Name'%>
+                <%= f.association :winetype, style:"width: 15vw;",
+                include_blank: "Winetype"%>
+                <%= f.submit "Add a Wine", class: "uni-button" %>
+              </div>
+              <% end %>
+          </div>
         </div>
       </div>
     </div>

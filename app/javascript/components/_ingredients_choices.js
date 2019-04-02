@@ -135,17 +135,10 @@ wineindex.forEach(x => checkconditionthree(x))
 
 // scrolling to ingredients index of the whine show when submitting the form
 const ingredient_btn = document.getElementById("submit-btn-wine-ingredients");
-// const ingredient_index = document.getElementById("ingredients-index-wine-show");
-// function scrolldown(e) {
+
+// if (document.body.contains(ingredient_btn)) {
 //   ingredient_btn.scrollIntoView({behavior: "smooth"});
-
 // }
-
-// ingredient_btn.addEventListener('click', scrolldown)
-// ingredient_btn.scrollIntoView({behavior: "smooth"});
-if (document.body.contains(ingredient_btn)) {
-  ingredient_btn.scrollIntoView({behavior: "smooth"});
-}
 
 
 
