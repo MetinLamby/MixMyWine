@@ -6,8 +6,7 @@
   justify-content: center;
   flex-direction: column;
   .wine-purchase-back {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 19.89%, rgba(0, 0, 0, 0.7) 100%), image_url("banner-pic.jpg");
-    background-size: cover;
+    background: white;
     border-radius: 10px;
     height: 40vh;
     width: 30vw;
@@ -16,13 +15,14 @@
     justify-content: center;
     flex-direction: column;
     h3 {
-      color: white;
+      color: black;
     }
     span {
-      color: white;
+      color: black;
     }
     button {
       span {
+        color: white;
         min-height: 30px;
         border: none;
         background: #D81159;
