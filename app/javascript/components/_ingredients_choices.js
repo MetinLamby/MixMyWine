@@ -121,18 +121,6 @@ function checkconditionthree(x){
 wineindex.forEach(x => checkconditionthree(x))
 
 
-
-
-
-// const q = document.querySelectorAll(".wine-cards")
-
-// q.forEach(q=>console.log(q.querySelectorAll(".winename")[0].innerHTML))
-
-
-
-
-
-
 // scrolling to ingredients index of the whine show when submitting the form
 const ingredient_btn = document.getElementById("submit-btn-wine-ingredients");
 
